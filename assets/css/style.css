@@ -1,0 +1,61 @@
+body, html {
+    background-image: url("../images/castle.png");
+    height: 100vh;
+    margin: 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pictureClue, span.win, .guessChance {
+    text-align: center;
+    height: 150px;
+    width: 50%
+}
+.pictureClue {
+    font-size: 1.2rem;
+    padding-left: 27%;
+}
+.guessChance, .win {
+    font-size: 35px;
+}
+.underScore {
+    border: 3px solid white;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px auto;
+    height: 150px;
+    width: 50%;
+    padding-top: 50px;
+}
+
+.rightWord {
+    border: 3px solid white;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+    height: 150px;
+    width: 50%
+}
+.wrongWord {
+    border: 3px solid white;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+    height: 150px;
+    width: 50%
+}
+
+.movieClue {
+    text-align: center;
+}
+
+#frozen_img, #cinderella_img, #dumbo_img, #pinocchio_img, #hercules_img, #pocahontas_img, #aladdin_img, #mulan_img, #moana_img {
+    display: none;
+    margin-left: 27%;
+}

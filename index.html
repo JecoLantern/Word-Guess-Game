@@ -1,0 +1,62 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1 class="mb-2 text-white mx-auto" style="width: 31.5rem">Disney Movie Guess Game</h1>
+        </header>
+        <div class="row align-items-center">
+            <div class="col-sm-8 mb-2">
+                <h1 class="mb-2 text-white">Wins:</h1>
+                <span class="win text-white">0</span>
+            </div>
+            <div class="col-sm-4 mb-2 text-white">
+                <h1 class="mb-2 text-white">Guesses Left:</h1>
+                <span class="guessChance">15</span>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-8 mb-2 text-white">
+                <h1 class="mb-2 text-white">Movie Title:</h1>
+                <div class="row">
+                <span class="underScore">_</span></div>
+            </div>
+            <div class="col-sm-4 mb-2 text-white">
+                <h1 class="mb-2 text-white">Right Letters</h1>
+                <span class="rightWord">Right Guess</span>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-8 mb-2 text-white">
+                <h1 class="mb-2 text-white movieClue">Movie Clue:</h1>
+                <div class="row align-items-center">
+                    <img id="frozen_img" src="assets/images/frozen.jpg" alt="Frozen" width="553.5px" height="277px" style="display: none;">
+                    <img id="cinderella_img" src="assets/images/cinderella.jpg" alt="Cinderella" width="553.5px" height="277px" style="display: none;">
+                    <img id="dumbo_img" src="assets/images/dumbo.jpg" alt="Dumbo" width="553.5px" height="277px" style="display: none;">
+                    <img id="pinocchio_img" src="assets/images/pinocchio.jpg" alt="Pinocchio" width="553.5px" height="277px" style="display: none;">
+                    <img id="hercules_img" src="assets/images/hercules.jpg" alt="Hercules" width="553.5px" height="277px" style="display: none;">
+                    <img id="pocahontas_img" src="assets/images/pocahontas.jpg" alt="Pocahontas" width="553.5px" height="277px" style="display: none;">
+                    <img id="aladdin_img" src="assets/images/aladdin.jpg" alt="Aladdin" width="553.5px" height="277px" style="display: none;">
+                    <img id="mulan_img" src="assets/images/mulan.jpg" alt="Mulan" width="553.5px" height="277px" style="display: none;">
+                    <img id="moana_img" src="assets/images/moana.jpg" alt="Moana" width="553.5px" height="277px" style="display: none;">
+                    <div class="col-md-12 pictureClue"></div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-2 text-white">
+                <h1 class="mb-2 text-white">Wrong Letters</h1>
+                <span class="wrongWord">Wrong Guess</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
