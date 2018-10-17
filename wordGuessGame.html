@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio JecoLantern</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style1.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../about.html">Jeric B. Ayonke, MLS(ASCP<sup>i</sup>)<sup>CM</sup></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container-fluid">
+                <header>
+                    <h1 class="mb-2 text-white mx-auto" style="width: 31.5rem">Disney Movie Guess Game</h1>
+                </header>
+            <div class="row align-items-center">
+                <div class="col-sm-8 col-6 mb-2">
+                    <h1 class="mb-2 text-white">Wins:</h1>
+                    <span class="win text-white">0</span>
+                </div>
+                <div class="col-sm-4 col-6 mb-2 text-white">
+                    <h1 class="mb-2 text-white">Guesses Left:</h1>
+                    <span class="guessChance">15</span>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-8 col-8 mb-2 text-white">
+                    <h1 class="mb-2 text-white">Movie Title:</h1>
+                    <div class="row">
+                    <span class="underScore">_</span></div>
+                </div>
+                <div class="col-sm-4 col-4 mb-2 text-white">
+                    <h1 class="mb-2 text-white">Right Letters</h1>
+                    <span class="rightWord">Right Guess</span>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-8 col-8 mb-2 text-white">
+                    <h1 class="mb-2 text-white movieClue">Movie Clue:</h1>
+                    <div class="row align-items-center">
+                        <img id="frozen_img" src="assets/images/frozen.jpg" alt="Frozen" width="553.5px" height="277px" style="display: none;">
+                        <img id="cinderella_img" src="assets/images/cinderella.jpg" alt="Cinderella" width="553.5px" height="277px" style="display: none;">
+                        <img id="dumbo_img" src="assets/images/dumbo.jpg" alt="Dumbo" width="553.5px" height="277px" style="display: none;">
+                        <img id="pinocchio_img" src="assets/images/pinocchio.jpg" alt="Pinocchio" width="553.5px" height="277px" style="display: none;">
+                        <img id="hercules_img" src="assets/images/hercules.jpg" alt="Hercules" width="553.5px" height="277px" style="display: none;">
+                        <img id="pocahontas_img" src="assets/images/pocahontas.jpg" alt="Pocahontas" width="553.5px" height="277px" style="display: none;">
+                        <img id="aladdin_img" src="assets/images/aladdin.jpg" alt="Aladdin" width="553.5px" height="277px" style="display: none;">
+                        <img id="mulan_img" src="assets/images/mulan.jpg" alt="Mulan" width="553.5px" height="277px" style="display: none;">
+                        <img id="moana_img" src="assets/images/moana.jpg" alt="Moana" width="553.5px" height="277px" style="display: none;">
+                        <div class="col-md-12 pictureClue"></div>
+                    </div>
+                </div>
+                    <div class="col-sm-4 col-4 mb-2 text-white">
+                        <h1 class="mb-2 text-white">Wrong Letters</h1>
+                        <span class="wrongWord">Wrong Guess</span>
+                    </div>
+            </div>
+            </div>
+
+        </main>
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script> -->
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
+
